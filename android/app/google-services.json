@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742369655433",
+    "project_id": "bitkiasistanipro",
+    "storage_bucket": "bitkiasistanipro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742369655433:android:c136e5ef752866ba282458",
+        "android_client_info": {
+          "package_name": "com.example.bitkiuyg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIO_68LGFi4WRYDgC-u3LWN2u_-koGFRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
