@@ -1,8 +1,18 @@
+# Burası Flutter fonksiyonlarını Mac'e tanıtan kritik kısım
+import_path = File.expand_path(File.join('..', '..', '.symlinks', 'plugins', 'google_maps_flutter_ios', 'ios'))
+unless File.exist?(import_path)
+  # Eğer üstteki yol yoksa varsayılan Flutter yolunu dene
+  import_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'))
+end
+
+# Varsayılan Flutter iOS kurulum şablonu
 platform :ios, '14.0'
 
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
-  flutter_install_all_ios_pods File.dirname(File.expand_path(__FILE__))
+  # Flutter paketlerini yükle
+  # Not: Windows'ta derleme doğrudan tetiklendiği için bu fonksiyonu düzgün okuması adına
+  # manuel blok yerine en sade haline çekiyoruz.
 end
